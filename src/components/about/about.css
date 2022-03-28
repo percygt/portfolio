@@ -1,0 +1,25 @@
+.about__container {
+  display: block;
+  text-align: center;
+}
+#about {
+  background-color: black;
+}
+.about__content p {
+  margin-bottom: 2rem;
+  color: var(--color-light);
+}
+
+/* =======================Media queries======================= */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    padding: 2rem 0.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__container {
+    padding: 2rem 2rem;
+  }
+}
