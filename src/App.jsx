@@ -6,18 +6,21 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import "./App.scss";
 
 const App = () => {
   return (
-    <>
-      <Header />
+    <div className="app">
       <Nav />
-      <About />
-      <Experience />
-      {/* <Portfolio /> */}
-      <Contact />
+      <Header />
+      <div className="sections">
+        <About />
+        <Experience />
+        {/* <Portfolio /> */}
+        <Contact />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

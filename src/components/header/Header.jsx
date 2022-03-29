@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./header.scss";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
@@ -17,7 +17,7 @@ const Header = () => {
     });
   }, []);
   return (
-    <header>
+    <div className="header">
       <div className="container header_container">
         <h5>Hi there, I'm</h5>
         <h1>Percy</h1>
@@ -33,7 +33,7 @@ const Header = () => {
           Scroll Down
         </a>
       </div>
-    </header>
+    </div>
   );
 };
 

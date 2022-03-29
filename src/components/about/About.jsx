@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import GRADME from "../../assets/gradme.png";
 
 const About = () => {
   return (
@@ -7,20 +8,41 @@ const About = () => {
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
+        <div className="gradme">
+          <img src={GRADME} alt="percy" />
+        </div>
         <div className="about__content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, qus nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Hi, I'm an <span>Electronics Engineer</span> carving a path into{" "}
+            <span>Software Development</span> which I ❤️. An avid fan of
+            <span> blockchain technology</span> and its potential to be globally
+            adopted and change our financial system .
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
+          <p>
+            I am a problem-solver, a well-organized person, and an independent
+            employee with high attention to detail. I have a fair amount of
+            knowledge building applications using{" "}
+            <span>
+              JavaScript, PHP, Python, and libraries such as JQuery and ReactJS
+            </span>
+            .
+          </p>
+          <p>
+            I know that my experience in software development is a bit short.
+            And to compensate for that, I am constantly learning every day to
+            enhance my skill.
+          </p>
+          <p>
+            If given a chance to work with you rest assured that I will be the
+            best version of myself to fulfill my job description in any way I
+            can.
+          </p>
         </div>
+      </div>
+      <div className="contactme">
+        <a href="#contact" className="btn btn-primary">
+          Contact me
+        </a>
       </div>
     </section>
   );

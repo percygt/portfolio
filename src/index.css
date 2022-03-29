@@ -8,6 +8,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -21,10 +23,6 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
-}
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -130,6 +128,6 @@ img {
     width: var(--container-width-sm);
   }
   section > h2 {
-    margin-top: 2rem;
+    margin: 0;
   }
 }

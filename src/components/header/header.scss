@@ -1,9 +1,14 @@
-.header_container {
+.header {
   padding-top: 7rem;
-  text-align: center;
-  height: 80%;
-  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+  .header_container {
+    text-align: center;
+    height: 80%;
+    position: relative;
+  }
 }
+
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -19,14 +24,14 @@
   position: absolute;
   left: 0;
   bottom: 3rem;
+  &::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+  }
 }
 
-.header__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
 /* ===================ME======================= */
 .me {
   background: linear-gradient(var(--color-primary), transparent);
@@ -59,7 +64,7 @@
     height: 15rem;
     left: calc(50% - 7.5rem);
   }
-  header {
+  .header {
     height: 100vh;
   }
   .header__socials,
@@ -67,7 +72,7 @@
     display: none;
   }
 
-  header {
+  .header {
     padding-top: 3rem;
   }
 }
