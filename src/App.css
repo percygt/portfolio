@@ -15,31 +15,34 @@
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  .container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
-  }
-  .sections {
-    width: 100%;
-
-    > * {
-      height: 100vh;
-      margin-bottom: 3rem;
-      padding-top: 0.6rem;
-      h2,
-      h5 {
-        text-align: center;
-        color: var(--color-light);
-      }
-      h2 {
-        color: var(--color-primary);
-        margin: 3rem 0;
-      }
-    }
-  }
 }
 
-// Defaults
+.app .container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.app .sections {
+  width: 100%;
+}
+
+.app .sections > * {
+  height: 100vh;
+  margin-bottom: 3rem;
+  padding-top: 0.6rem;
+}
+
+.app .sections > * h2,
+.app .sections > * h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+.app .sections > * h2 {
+  color: var(--color-primary);
+  margin: 3rem 0;
+}
+
 h1,
 h2,
 h3,
@@ -47,19 +50,24 @@ h4,
 h5 {
   font-weight: 500;
 }
+
 .text-light {
   color: var(--color-light);
 }
 
 a {
   color: var(--color-primary);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
-  &:hover {
-    color: var(--color-white);
-  }
+}
+
+a:hover {
+  color: var(--color-white);
 }
 
 .btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -67,12 +75,14 @@ a {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
-  &:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-  }
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
 }
 
 .btn-primary {
@@ -83,10 +93,11 @@ a {
 img {
   display: block;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-/* =======================Media queries======================= */
 
+/* =======================Media queries======================= */
 @media screen and (max-width: 1294px) {
   .app .sections > * {
     height: 100%;
@@ -114,3 +125,4 @@ img {
     margin: 0 auto;
   }
 }
+/*# sourceMappingURL=App.css.map */

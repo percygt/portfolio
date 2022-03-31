@@ -1,54 +1,79 @@
 .about__container {
   display: grid;
-  grid-template-columns: 3fr 5fr;
-  gap: 2rem;
-  text-align: center;
-  justify-items: end;
+  grid-template-columns: 35% 55%;
+  gap: 5%;
+  padding-left: 5%;
 }
 
 .about__content p {
-  margin: 1.5rem 4rem;
+  margin: 1.5rem 0;
   color: var(--color-light);
 }
 
-.about__content .btn {
-  margin-top: 2.5rem;
+.about__me {
+  aspect-ratio: 1/1;
+  background: linear-gradient(
+    45deg,
+    var(--color-bg),
+    var(--color-primary-variant),
+    rgb(13, 13, 39)
+  );
+  width: 100%;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
 }
 
-/* =======================Media queries======================= */
-
-@media screen and (max-width: 1024px) {
-  .about__container {
-    padding: 0;
-    display: block;
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about__container {
-    padding: 1rem 2rem;
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-}
-
-.gradme {
-  background: linear-gradient(var(--color-primary-variant), rgb(13, 13, 39));
-  border-radius: 10rem 10rem 10rem 10rem;
+.about__me-image {
+  background: linear-gradient(
+    -45deg,
+    var(--color-primary-variant),
+    var(--color-bg),
+    rgb(13, 13, 39)
+  );
+  border-radius: 2rem;
   overflow: hidden;
-  max-width: 20rem;
-  max-height: 25rem;
-  padding-top: 5.5rem;
+  transform: rotate(-10deg);
+  padding-top: 3.5rem;
+  aspect-ratio: 1/1;
+  transition: var(--transition);
 }
-.gradme:hover {
-  background: var(--color-bg);
+
+.about__me-image:hover {
+  transform: rotate(0deg);
 }
 span {
   color: var(--color-white);
 }
 .contactme {
-  margin-top: 3rem;
+  margin-top: 5rem;
   text-align: center;
+}
+/* =======================Media queries======================= */
+
+@media screen and (max-width: 1294px) {
+  .about {
+    height: 100%;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-left: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 1rem auto 2rem;
+  }
 }

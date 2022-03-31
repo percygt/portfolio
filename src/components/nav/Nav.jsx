@@ -1,13 +1,31 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
 import { MdWork } from "react-icons/md";
-import { FaUserTie } from "react-icons/fa";
-import { RiContactsBook2Fill } from "react-icons/ri";
+import { BsPersonFill } from "react-icons/bs";
+import { MdImportContacts } from "react-icons/md";
 import "./nav.css";
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
+// import { aboutRef } from "../about/About";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+  // const callbackFunction = (entries) => {
+  //   const [entry] = entries;
+  //   setActiveNav(entry.isIntersecting);
+  // };
+
+  // const options = useMemo(() => {
+  //   return { root: null, rootMargin: "0", threshold: 0 };
+  // }, []);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(callbackFunction, option);
+  //   const currentTarget = aboutRef.current;
+  //   if (currentTarget) observer.observe(currentTarget);
+
+  //   return () => {};
+  // });
+
   return (
     <nav>
       <a
@@ -15,14 +33,14 @@ const Nav = () => {
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >
-        <FaHome />
+        <MdHome />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
-        <FaUserTie />
+        <BsPersonFill />
       </a>
       <a
         href="#experience"
@@ -36,7 +54,7 @@ const Nav = () => {
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <RiContactsBook2Fill />
+        <MdImportContacts />
       </a>
     </nav>
   );
