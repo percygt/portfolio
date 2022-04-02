@@ -52,7 +52,7 @@ span {
 /* =======================Media queries======================= */
 
 @media screen and (max-width: 1294px) {
-  .about {
+  section {
     height: 100%;
   }
   .about__container {
@@ -71,9 +71,18 @@ span {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .about {
+    padding-bottom: 5.5rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about__me {
     width: 65%;
     margin: 1rem auto 2rem;
+  }
+  .about__me-image {
+    padding-top: 2.5rem;
   }
 }

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
 import "./experience.css";
 
 const Experience = () => {
   return (
-    <div className="section experience" id="experience">
+    <section className="experience" id="experience">
       <h5>What skills I Have</h5>
       <h2>My Experience</h2>
       <div className="container experience__container">
@@ -82,7 +82,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,10 +1,7 @@
-.header {
-  padding-top: 7rem;
-  height: 100vh;
-  scroll-snap-align: start;
+#header {
+  padding-top: 5rem;
 }
-
-.header .header_container {
+.header_container {
   text-align: center;
   height: 80%;
   position: relative;
@@ -35,7 +32,7 @@
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  left: 0;
+  left: 2rem;
   bottom: 3rem;
 }
 
@@ -66,33 +63,52 @@
   padding-top: 0.8rem;
   padding-left: 0.3rem;
 }
+.me:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--color-white)),
+    to(transparent)
+  );
+}
 
 /* =======================Scroll Down======================= */
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
+  right: 0rem;
   bottom: 5rem;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* =======================Media queries======================= */
+
+@media screen and (max-width: 1294px) {
+  .me {
+    position: relative;
+  }
+  .header_container {
+    height: 88vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .me {
     width: 18rem;
     height: 18rem;
     left: calc(50% - 9rem);
+    position: relative;
   }
-  .header {
+  .header_container {
     height: 100vh;
   }
   .header__socials,
   .scroll__down {
     display: none;
   }
-  .header {
+  #header {
     padding-top: 3rem;
   }
 }

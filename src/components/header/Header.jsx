@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 
 const Header = () => {
   const textRef = useRef();
+
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
@@ -17,7 +18,7 @@ const Header = () => {
     });
   }, []);
   return (
-    <div className="header">
+    <section className="header" id="header">
       <div className="container header_container">
         <h5>Hi there, I'm</h5>
         <h1>Percy</h1>
@@ -33,7 +34,7 @@ const Header = () => {
           Scroll Down
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -7,8 +7,8 @@ import "./nav.css";
 import { useState, useMemo, useEffect } from "react";
 // import { aboutRef } from "../about/About";
 
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+const Nav = (props) => {
+  const [activeNav, setActiveNav] = useState("#header");
   // const callbackFunction = (entries) => {
   //   const [entry] = entries;
   //   setActiveNav(entry.isIntersecting);
@@ -25,13 +25,19 @@ const Nav = () => {
 
   //   return () => {};
   // });
-
+  // console.log(props.data);
+  // console.log(activeNav);
+  useEffect(() => {
+    const activeNav = "#" + props.data;
+    // console.log(activeNav);
+    setActiveNav(activeNav);
+  });
   return (
     <nav>
       <a
         href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
+        onClick={() => setActiveNav("#header")}
+        className={activeNav === "#header" ? "active" : ""}
       >
         <MdHome />
       </a>

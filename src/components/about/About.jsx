@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useRef, useEffect, useState, useMemo } from "react";
 import "./about.css";
 import GRADME from "../../assets/gradme.png";
 
 const About = () => {
-  const aboutRef = useRef(null);
   return (
-    <div className="section about" id="about" ref={aboutRef}>
+    <section className="about" id="about">
       <h5>Get to know</h5>
       <h2>About Me</h2>
-      <div className="container about__container">
+      <section className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
             <img src={GRADME} alt="percy" />
@@ -47,8 +47,8 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

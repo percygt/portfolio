@@ -1,5 +1,7 @@
 .about__container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 35% 55%;
   grid-template-columns: 35% 55%;
   gap: 5%;
   padding-left: 5%;
@@ -16,10 +18,11 @@
     45deg,
     var(--color-bg),
     var(--color-primary-variant),
-    rgb(13, 13, 39)
+    #0d0d27
   );
   width: 100%;
   border-radius: 2rem;
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -29,42 +32,45 @@
     -45deg,
     var(--color-primary-variant),
     var(--color-bg),
-    rgb(13, 13, 39)
+    #0d0d27
   );
   border-radius: 2rem;
   overflow: hidden;
+  -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
   padding-top: 3.5rem;
   aspect-ratio: 1/1;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .about__me-image:hover {
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+
 span {
   color: var(--color-white);
 }
+
 .contactme {
-  margin-top: 5rem;
+  margin: 3rem 0;
   text-align: center;
 }
-/* =======================Media queries======================= */
 
+/* =======================Media queries======================= */
 @media screen and (max-width: 1294px) {
-  .about {
-    height: 100%;
-  }
   .about__container {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 0;
     padding-left: 0;
+    position: relative;
   }
   .about__me {
     width: 50%;
     margin: 2rem auto 4rem;
   }
-
   .about__content p {
     margin: 1rem 0 1.5rem;
     text-align: center;
@@ -76,4 +82,8 @@ span {
     width: 65%;
     margin: 1rem auto 2rem;
   }
+  .about__me-image {
+    padding-top: 2.5rem;
+  }
 }
+/*# sourceMappingURL=about.css.map */
