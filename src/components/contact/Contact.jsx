@@ -6,14 +6,10 @@ import "./contact.css";
 const Contact = () => {
   const form = useRef();
   const [message, setMessage] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
     emailjs
       .sendForm(
         "service_pwdp3dm",
@@ -63,7 +59,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END of contact options */}
-        <form ref={form} onSubmit={(sendEmail, handleSubmit)}>
+        <form ref={form} onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
