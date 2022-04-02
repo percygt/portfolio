@@ -1,3 +1,8 @@
+#Intro
+Hi. I'm Percy and this my portfolio website built with ReactJS and Sass. 
+You may view the live portfolio via the ghpages link below.
+https://percygt.github.io/portfolio/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
