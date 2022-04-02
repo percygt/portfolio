@@ -1,4 +1,4 @@
-#Intro
+# Intro
 Hi. I'm Percy and this my portfolio website built with ReactJS and Sass. 
 You may view the live portfolio via the ghpages link below.
 https://percygt.github.io/portfolio/
