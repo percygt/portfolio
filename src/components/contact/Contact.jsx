@@ -1,10 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { RiMailSendLine, RiTelegramLine } from "react-icons/ri";
 import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const [message, setMessage] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage(true);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -58,7 +63,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END of contact options */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={(sendEmail, handleSubmit)}>
           <input
             type="text"
             name="name"
@@ -75,6 +80,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+          {message && <span>Thanks, I'll reply ASAP😊</span>}
         </form>
       </div>
     </section>
