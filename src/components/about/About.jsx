@@ -16,18 +16,18 @@ const About = () => {
         </div>
         <div className="about__content">
           <p>
-            I'm an <span>Electronics Engineer</span> by profession carving a
-            path to the career that I ❤️ which is
-            <span> Software Development</span> . An avid fan of
+            A registered <span>Electronics Engineer</span> carving a path to the
+            career that I ❤️,
+            <span> Software Development</span>. A fanatic of
             <span> blockchain technology</span> and the brillance of
-            <span> dApps</span>(decentralize applications). A problem-solver,
-            well-organized person, and an independent employee with high
-            attention to detail.
+            <span> dApps</span> and<span> web3</span>. A well-organized person
+            with high attention to detail and can work independently.
           </p>
           <p>
-            I have a fair amount of knowledge building applications using{" "}
+            I have a fair amount of knowledge building applications using
             <span>
-              JavaScript, PHP, Python, and libraries such as JQuery and ReactJS
+              JavaScript, PHP, Python, and libraries/frameworks such as JQuery
+              and ReactJS
             </span>
             .
           </p>
@@ -38,8 +38,8 @@ const About = () => {
           </p> */}
           <p>
             If given a chance to work with you, rest assured that I will be the
-            best version of myself to fulfill my job description in any way I
-            can.
+            best version of myself to fulfill my job description in any way
+            possible.
           </p>
           <div className="contactme">
             <a href="#contact" className="btn btn-primary">
