@@ -35,9 +35,9 @@ const Nav = (props) => {
   return (
     <nav>
       <a
-        href="#"
-        onClick={() => setActiveNav("#header")}
-        className={activeNav === "#header" ? "active" : ""}
+        href="#intro"
+        onClick={() => setActiveNav("#intro")}
+        className={activeNav === "#intro" ? "active" : ""}
       >
         <MdHome />
       </a>

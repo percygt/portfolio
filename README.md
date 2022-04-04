@@ -1,9 +1,10 @@
 # Intro
-Hi. I'm Percy and this my portfolio website built with ReactJS and Sass. 
-You may view the live portfolio via the ghpages link below.
+
+Hi. I'm Percy and this is my portfolio website built with ReactJS and CSS/SASS.
+You may view the live portfolio via the ghpages link provided below.
 https://percygt.github.io/portfolio/
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -73,4 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Percy-s-Portfolio-Website" 
+"# Percy-s-Portfolio-Website"

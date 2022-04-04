@@ -30,10 +30,12 @@
 
 .experience__details {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  /* justify-content: center; */
 }
 
 .experience__icon {
+  margin-left: 4rem;
   margin-top: 6px;
   color: var(--color-primary);
 }
@@ -49,6 +51,15 @@
   }
   .experience__content {
     padding: 1rem;
+  }
+  .experience__details {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+  }
+
+  .experience__icon {
+    margin-left: 1.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -68,5 +79,14 @@
   }
   .experience__content {
     row-gap: 1rem;
+  }
+  .experience__details {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+  }
+
+  .experience__icon {
+    margin-left: 0;
   }
 }

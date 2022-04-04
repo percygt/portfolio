@@ -55,8 +55,8 @@ const App = () => {
         <Experience />
         {/* <Portfolio /> */}
         <Contact />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

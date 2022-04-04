@@ -18,7 +18,7 @@ const Header = () => {
     });
   }, []);
   return (
-    <section className="header" id="header">
+    <section className="header" id="intro">
       <div className="container header_container">
         <h5>Hi there, I'm</h5>
         <h1>Percy</h1>

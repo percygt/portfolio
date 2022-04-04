@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="foote" r>
       <a href="#" className="footer__logo">
         Percy Timon
       </a>
@@ -46,7 +46,19 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        &copy; Percy Timon. All rights reserved
+        &copy; Percy Timon. All rights reserved.
+        <div>
+          {" "}
+          Made with ❤️. GitHub source code link{" "}
+          <a
+            href="https://github.com/percygt/portfolio"
+            rel="noreferrer"
+            target="_blank"
+            style={{ color: "blue" }}
+          >
+            here.
+          </a>
+        </div>
       </div>
     </footer>
   );

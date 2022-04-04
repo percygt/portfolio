@@ -1,6 +1,6 @@
 :root {
   --color-bg: #041c32;
-  --color-bg-variant: #04293a;
+  --color-bg-variant: rgba(255, 255, 255, 0.03);
   --color-primary: #ecb365;
   --color-primary-variant: #064663;
   --color-white: #fff;
@@ -12,8 +12,8 @@
 }
 
 .app {
-  background-color: var(--color-bg);
   color: var(--color-white);
+  background-color: var(--color-bg);
   line-height: 1.7;
 }
 
@@ -23,24 +23,44 @@
 }
 
 .app .sections {
-  width: 100%;
+  position: relative;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-.app .sections > * {
-  height: 100vh;
-  margin-bottom: 3rem;
+.app .sections::-webkit-scrollbar {
+  display: none;
+}
+
+.app .sections > section,
+.app .sections footer {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: auto;
   padding-top: 0.6rem;
 }
 
-.app .sections > * h2,
-.app .sections > * h5 {
+.app .sections > section h2,
+.app .sections > section h5,
+.app .sections footer h2,
+.app .sections footer h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-.app .sections > * h2 {
+.app .sections > section h2,
+.app .sections footer h2 {
   color: var(--color-primary);
   margin: 3rem 0;
+}
+
+.app .sections > section {
+  background-color: var(--color-bg);
+  height: 100vh;
 }
 
 h1,
@@ -98,9 +118,13 @@ img {
 }
 
 /* =======================Media queries======================= */
-@media screen and (max-width: 1294px) {
-  .app .sections > * {
-    height: 100%;
+@media screen and (max-width: 1024px) {
+  .app .sections {
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+  }
+  .app .sections > section {
+    height: 100vh;
   }
   .app .sections > * h2 {
     margin-top: 6rem;
@@ -113,8 +137,12 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .app .sections > * {
-    height: 100%;
+  .app .sections {
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+  }
+  .app .sections > section {
+    height: auto;
     margin-bottom: 0;
   }
   .app .sections > * h2 {
