@@ -1,6 +1,10 @@
 # Intro
+<<<<<<< HEAD
 
 Hi. I'm Percy and this is my portfolio website built with ReactJS and CSS/SASS.
+=======
+Hi. I'm Percy and this is my portfolio website built with ReactJS and CSS/SASS. 
+>>>>>>> 6d57879192b5fdea1611794b2c83cbe3159b7958
 You may view the live portfolio via the ghpages link provided below.
 https://percygt.github.io/portfolio/
 
