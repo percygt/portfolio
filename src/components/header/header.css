@@ -1,4 +1,4 @@
-#header {
+#intro {
   padding-top: 5rem;
 }
 
@@ -46,8 +46,8 @@
 
 /* ===================ME======================= */
 .me {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary)), to(transparent));
-  background: linear-gradient(var(--color-primary), transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-variant)), to(transparent));
+  background: linear-gradient(var(--color-primary-variant), transparent);
   width: 22rem;
   height: 22rem;
   position: absolute;

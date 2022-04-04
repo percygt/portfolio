@@ -1,4 +1,4 @@
-#header {
+#intro {
   padding-top: 5rem;
 }
 .header_container {
@@ -49,10 +49,10 @@
     linear,
     left top,
     left bottom,
-    from(var(--color-primary)),
+    from(var(--color-primary-variant)),
     to(transparent)
   );
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(var(--color-primary-variant), transparent);
   width: 22rem;
   height: 22rem;
   position: absolute;

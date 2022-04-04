@@ -1,8 +1,8 @@
 :root {
-  --color-bg: #041c32;
+  --color-bg: #021c35;
   --color-bg-variant: rgba(255, 255, 255, 0.03);
-  --color-primary: #ecb365;
-  --color-primary-variant: #064663;
+  --color-primary: #eabd80;
+  --color-primary-variant: #2c8ab6;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: auto 400ms ease;
@@ -120,8 +120,8 @@ img {
 /* =======================Media queries======================= */
 @media screen and (max-width: 1024px) {
   .app .sections {
-    -ms-scroll-snap-type: y proximity;
-        scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
   }
   .app .sections > section {
     height: 100vh;
@@ -138,8 +138,8 @@ img {
 
 @media screen and (max-width: 600px) {
   .app .sections {
-    -ms-scroll-snap-type: y proximity;
-        scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
   }
   .app .sections > section {
     height: auto;

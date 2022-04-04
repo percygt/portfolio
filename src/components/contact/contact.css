@@ -51,10 +51,6 @@ textarea {
   color: var(--color-white);
 }
 
-span {
-  color: var(--color-primary);
-}
-
 @media screen and (max-width: 1294px) {
   .container.contact__container {
     grid-template-columns: 1fr;

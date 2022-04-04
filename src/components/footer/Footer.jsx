@@ -46,7 +46,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        &copy; Percy Timon. All rights reserved.
+        &copy; 2022 Percy Timon. All rights reserved.
         <div>
           {" "}
           Made with ❤️. GitHub source code link{" "}
