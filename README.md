@@ -1,6 +1,6 @@
 # Intro
-Hi. I'm Percy and this is my portfolio website built with ReactJS and Sass. 
-You may view the live portfolio via the ghpages link below.
+Hi. I'm Percy and this is my portfolio website built with ReactJS and CSS/SASS. 
+You may view the live portfolio via the ghpages link provided below.
 https://percygt.github.io/portfolio/
 
 # Getting Started with Create React App
